@@ -1,0 +1,390 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+
+/* HTML5 display-role reset for older browsers */
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+  display: block;
+}
+
+body {
+  line-height: 1;
+}
+
+ol,
+ul {
+  list-style: none;
+}
+
+blockquote,
+q {
+  quotes: none;
+}
+
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+  content: "";
+  content: none;
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+.header {
+  padding-top: 25px;
+  display: flex;
+}
+.header__top {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.header__bottom {
+  padding: 24px 0 14px;
+  display: flex;
+  align-items: center;
+}
+.header .btn {
+  background: none;
+  border: none;
+}
+.header .btn:hover {
+  background-color: #77be1d;
+  border-color: #77be1d;
+}
+.header .dropdown-menu.show {
+  display: block;
+  background-color: #100D18;
+}
+.header .dropdown-item {
+  color: #ffffff;
+  background-color: #171320;
+  border-radius: 5px;
+  padding: 10px 5px;
+}
+.header .dropdown-item:hover {
+  background-color: #77be1d;
+}
+.header .currency {
+  display: flex;
+  justify-content: space-around;
+  color: #ffffff;
+}
+.header .currency__link {
+  background: #171320;
+}
+.header .currency__li {
+  color: #ffffff;
+  text-decoration: none;
+  background-color: #171320;
+  padding: 4px 12px;
+  border-radius: 5px;
+}
+.header .currency__li:hover {
+  background-color: #77be1d;
+}
+.header__scores {
+  display: flex;
+  align-items: center;
+}
+.header__score-txt {
+  padding-left: 23px;
+}
+.header__lang-but, .header__score {
+  color: #ffffff;
+  font-size: 16px;
+  font-weight: 600;
+}
+.header .nav__list {
+  display: flex;
+}
+.header .nav__link {
+  color: #ffffff;
+  font-size: 16px;
+  font-weight: 600;
+  text-decoration: none;
+}
+.header .nav__item {
+  padding-right: 32px;
+}
+.header .nav__item:last-child {
+  padding-right: 0;
+}
+.header__img {
+  border: 2px solid #77be1d;
+  border-radius: 50px;
+}
+.header .searchbar {
+  display: flex;
+  align-items: center;
+  background-color: #c4c4c4;
+  padding: 22px 30px;
+  margin-right: 60px;
+  width: 648px;
+  border-radius: 15px;
+  opacity: 5%;
+}
+.header .searchbar__input {
+  font-size: 18px;
+  font-weight: 400;
+  background-color: inherit;
+  border: none;
+  outline: none;
+  color: #ffffff;
+  width: 100%;
+}
+.header .searchbar__icon {
+  margin-left: 30px;
+  cursor: pointer;
+  width: 30px;
+  height: 30px;
+  transition: 0.3s;
+}
+.header .searchbar__icon:hover {
+  transform: scale(1.2);
+}
+.header__logo {
+  padding-right: 60px;
+}
+.header__lines {
+  padding-right: 35px;
+}
+.header__free {
+  padding-right: 60px;
+  text-decoration: none;
+  color: #ffffff;
+}
+.header__heart {
+  padding-right: 25px;
+}
+.header .basket-2 {
+  position: relative;
+}
+.header .basket-2__2-bg {
+  position: absolute;
+  top: -13px;
+  left: 13px;
+}
+.header__scores {
+  color: #ffffff;
+}
+.header__avatar {
+  display: flex;
+  align-items: center;
+}
+.header__name {
+  padding-right: 25px;
+  color: #ffffff;
+}
+
+.basket {
+  display: relative;
+}
+.basket__title {
+  color: #ffffff;
+  font-size: 48px;
+  font-weight: 700;
+  padding-right: 10px;
+}
+.basket__five {
+  color: #77be1d;
+  font-size: 48px;
+  font-weight: 700;
+}
+.basket__titles {
+  display: flex;
+  padding-bottom: 30px;
+}
+.basket__sign {
+  position: relative;
+}
+.basket__top-text {
+  position: absolute;
+  color: #ffffff;
+  top: 30px;
+  left: 30px;
+  font-size: 32px;
+  font-weight: 800;
+}
+.basket__text {
+  position: absolute;
+  font-size: 20px;
+  font-weight: 500;
+  color: #ffffff;
+  top: 82px;
+  left: 30px;
+  line-height: 26px;
+}
+.basket__link {
+  position: absolute;
+  font-size: 16px;
+  font-weight: 400;
+  color: #000000;
+  background-color: #ffffff;
+  top: 177px;
+  left: 30px;
+  line-height: 20.8px;
+  padding: 13px 25px 16px;
+  border-radius: 15px;
+  text-decoration: none;
+}
+.basket__top-form {
+  display: flex;
+}
+
+.container {
+  gap: 30px;
+  position: relative;
+}
+
+.checkout {
+  width: 321px;
+  height: 382px;
+  top: 299px;
+  border-radius: 30px;
+  margin-left: 50px;
+}
+.checkout__title {
+  font-weight: 700;
+  font-size: 20px;
+  color: #ffffff;
+  line-height: 26px;
+  align-items: center;
+}
+
+.minecraft-counter__row {
+  width: 892px;
+  height: 270px;
+  padding-top: 30px;
+  left: 328px;
+}
+.minecraft-counter__title {
+  color: #ffffff;
+  font-size: 28px;
+  font-weight: 500;
+  height: 36.4px;
+}
+.minecraft-counter__img {
+  width: 200px;
+  height: 240px;
+  top: 30px;
+  border-radius: 6px;
+}
+body {
+  background-color: #06030F;
+  font-family: "Manrope", sans-serif;
+}
+
+.container {
+  width: 1260px;
+  margin: 0 auto;
+}
+
+.title__basket {
+  width: 700;
+  font-size: 48px;
+  height: 62.4px;
+}/*# sourceMappingURL=style.css.map */

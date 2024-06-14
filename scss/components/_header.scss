@@ -1,0 +1,206 @@
+.header {
+  padding-top: 25px;
+  display: flex;
+
+  &__top {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+  }
+
+  &__bottom{
+    padding: 24px 0 14px;
+    display: flex;
+    align-items: center;
+
+  }
+  
+
+
+    .btn{
+      background: none;
+      border: none;
+
+      
+    }
+    .btn:hover {
+
+      background-color: $bg-green;
+      border-color:$border-green ;
+  }
+
+  .dropdown-menu.show {
+    display: block;
+    background-color: $bg-black ;
+    
+}
+
+.dropdown-item{
+  color: $text-white;
+  background-color: $bg-dark-blue;
+  border-radius: 5px;
+  padding: 10px 5px;
+  
+}
+
+.dropdown-item:hover{
+  background-color: $bg-green;
+}
+
+  .currency{
+    display: flex;
+    justify-content: space-around;
+    color: $text-white;
+
+
+    &__link{
+    
+    background: $bg-dark-blue;
+    }
+
+    &__li{
+      color: $text-white;
+      text-decoration: none;
+      background-color: $bg-dark-blue;
+      padding: 4px 12px;
+      border-radius: 5px;
+
+
+    }
+
+    &__li:hover {
+
+      background-color: $bg-green;
+      
+
+  }
+  }
+
+    
+
+
+  &__scores{
+    display: flex;
+    align-items: center;
+  }
+
+  &__score-txt{
+    padding-left: 23px;
+  }
+
+  &__lang-but,
+  &__score{
+    color: $text-white;
+      font-size: 16px;
+      font-weight: 600;
+  }
+
+  .nav {
+    &__list {
+      display: flex;
+    }
+
+    &__link {
+      color: $text-white;
+      font-size: 16px;
+      font-weight: 600;
+      text-decoration: none;
+    }
+
+    &__item {
+      padding-right: 32px;
+      &:last-child {
+        padding-right: 0;
+      }
+    }
+  }
+
+  &__img{
+    border: 2px solid $border-green;
+    border-radius: 50px;
+  }
+
+  .searchbar {
+    display: flex;
+    align-items: center;
+    background-color: $input-silver;
+    padding: 22px 30px ;
+    margin-right: 60px;
+    width: 648px;
+    border-radius: 15px;
+    opacity: 5% ;
+
+
+    &__input {
+      font-size: 18px;
+      font-weight: 400;
+      background-color: inherit;
+      border: none;
+      outline: none;
+      color: $text-white;
+      width: 100%;
+    }
+
+
+  
+    
+  
+    &__icon {
+      margin-left: 30px;
+      cursor: pointer;
+      width: 30px;
+      height: 30px;
+      transition: 0.3s;
+  
+      &:hover {
+        transform: scale(1.2);
+      }
+    }
+  }
+
+  &__logo{
+    padding-right: 60px;
+  }
+
+  &__lines{
+    padding-right: 35px;
+  }
+
+  &__free{
+    padding-right: 60px;
+    text-decoration: none;
+    color: $text-white;
+  }
+
+  &__heart{
+    padding-right: 25px;
+  }
+
+  .basket-2{
+position: relative;
+
+
+    &__2-bg{
+      position: absolute;
+      top: -13px;
+      left: 13px;
+    }
+
+  }
+
+  &__scores {
+    color: $text-white;
+  }
+
+
+  &__avatar {
+    display: flex;
+    align-items: center;
+  }
+
+  &__name {
+    padding-right: 25px;
+    color: $text-white;
+  }
+}

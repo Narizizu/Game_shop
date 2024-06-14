@@ -1,0 +1,27 @@
+@import "./vendors/reset";
+
+@import "./variables";
+
+@import "./components/header";
+@import "./sections/basket";
+@import "./sections/minecraft-counter";
+
+body {
+  background-color:#06030F;
+  font-family: "Manrope", sans-serif;
+}
+
+.container {
+  width: 1260px;
+  margin: 0 auto;
+}
+
+.title__basket {
+  width: 700;
+  font-size: 48px;
+  height: 62.4px;
+}
+
+
+
+

@@ -1,0 +1,36 @@
+
+
+.minecraft-counter {
+    &__row {
+        width: 892px;
+        height: 270px;
+        padding-top: 30px;
+        left: 328px;
+
+
+
+
+    }
+
+    &__title {
+        color: $text-white;
+        font-size: 28px;
+        font-weight: 500;
+        height: 36.4px;
+    }
+
+    
+
+    &__img {
+        width: 200px;
+        height: 240px;
+        top: 30px;
+        border-radius: 6px;
+    }
+
+    &__blog {
+
+    }
+
+    
+}
